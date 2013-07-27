@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+   <RelativeLayout 
+       	android:id="@+id/rlRotate"
+		android:layout_width="fill_parent"
+		android:layout_height="400dp"
+		
+		
+		>
+			<ImageView
+	    			android:id="@+id/image1"
+	    			android:layout_centerVertical="true"
+	    			android:layout_centerHorizontal="true"
+	    			android:layout_width="80dp"
+	    			android:layout_height="120dp"
+	    			android:src="#00ffffff"
+	    			/>
+	   		<ImageView
+	    			android:id="@+id/image2"
+	    			android:layout_centerVertical="true"
+	    			android:layout_centerHorizontal="true"
+	    			android:layout_width="80dp"
+	    			android:layout_height="120dp"
+	    			android:src="#00ffffff"
+	    			/>
+	   		<ImageView
+	    			android:id="@+id/image3"
+	    			android:layout_centerVertical="true"
+	    			android:layout_centerHorizontal="true"
+	    			android:layout_width="80dp"
+	    			android:layout_height="120dp"
+	    			android:src="#00ffffff"
+	    			/>
+	   		<ImageView
+	    			android:id="@+id/image4"
+	    			android:layout_centerVertical="true"
+	    			android:layout_centerHorizontal="true"
+	    			android:layout_width="80dp"
+	    			android:layout_height="120dp"
+	    			
+	    			android:src="#f0ffffff"
+	    			/>
+	   		<ImageView
+	   		    	android:id="@+id/ivOval"
+	   		    	android:layout_centerVertical="true"
+	    			android:layout_centerHorizontal="true"
+	   		    	android:layout_width="240dp"
+	    			android:layout_height="130dp"
+	    			
+	    			android:background="@drawable/oval"
+	   		    	/>
+	   		
+		</RelativeLayout>
+		
+   <RelativeLayout 
+       	android:id="@+id/rlSucceed"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center_horizontal"
+		
+		>
+	   	<TextView
+	   	    android:id="@+id/tvTip"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_centerInParent="true"
+	   	    android:gravity="center"
+	   	    android:textColor="#ffffffff"
+	   	    android:textSize="15dp"
+	   	    android:text="恭喜你找到了有缘人！\n现在就开始互动吧！"
+	   	    
+	   	    />
+	   	<RelativeLayout
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_above="@id/tvTip"
+	   	    android:layout_marginBottom="30dp">
+	   	    
+	   	    <ImageView
+	   	    android:id="@+id/ivHeart"
+	   	    android:layout_width="40dp"
+	   	    android:layout_height="40dp"
+	   	    android:layout_centerInParent="true"
+	   	    android:layout_marginLeft="20dp"
+	   	    android:layout_marginRight="20dp"
+	   	    android:layout_marginBottom="80dp"
+	   	    android:src="@drawable/heart"
+	   	    />
+	   	<ImageView
+	   	    android:id="@+id/ivLeft"
+	   	    android:layout_width="80dp"
+	   	    android:layout_height="80dp"
+	   	    android:layout_toLeftOf="@id/ivHeart"
+	   	    android:layout_centerVertical="true"
+	   	    android:src="@drawable/mpic"/>
+	   	<ImageView
+	   	    android:id="@+id/ivRight"
+	   	    android:layout_width="80dp"
+	   	    android:layout_height="80dp"
+	   	    android:layout_toRightOf="@id/ivHeart"
+	   	    android:layout_centerVertical="true"
+	   	    android:src="@drawable/rpic1"/>
+	   	    </RelativeLayout>
+	   	    
+	   <Button
+        android:id="@+id/bSucceed"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvTip"
+        android:layout_marginTop="40dp"
+        android:textColor="@drawable/textcolor"
+        android:background="#8fffffff"
+        
+        android:text="确定"/>
+	   
+	   		
+  </RelativeLayout>
+  
+   <RelativeLayout
+        android:id="@+id/rlFailed"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center_horizontal">
+	   <TextView
+	   	    android:id="@+id/tvTip2"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_centerInParent="true"
+	   	    android:textColor="#ffffffff"
+	   	    android:textSize="15dp"
+	   	    
+	   	    android:gravity="center"
+	   	    android:text="很遗憾，有缘人还未出现。"
+	   	    />
+	   <ImageView
+	       android:id="@+id/ivFailed"
+	       
+	       android:layout_centerHorizontal="true"
+	       android:layout_width="120dp"
+	       android:layout_height="160dp"
+	       android:layout_above="@id/tvTip2"
+	       android:layout_marginBottom="30dp"
+	       android:src="@drawable/pic0"
+	       />
+	   <RelativeLayout 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_centerHorizontal="true"
+	       android:layout_below="@id/tvTip2"
+       	   android:layout_marginTop="40dp"
+	       >
+	   <Button
+        android:id="@+id/bAgain"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@drawable/textcolor"
+        android:background="#8fffffff"
+        android:text="再次尝试"/>
+	   
+	    <Button
+        android:id="@+id/bBack"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/bAgain"
+        android:layout_marginLeft="10dp"
+        android:textColor="@drawable/textcolor"
+        android:background="#8fffffff"
+        android:text="返回"/>
+	    
+	    </RelativeLayout>
+	   
+	   
+       
+       </RelativeLayout>
+
+</RelativeLayout>
